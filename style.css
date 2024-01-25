@@ -1,0 +1,120 @@
+*{
+padding: 0%;
+margin: 0%;
+}
+body{
+background-image: url(/assests/pexels-dana-tentis-370799.jpg);
+background-size: auto;
+animation: moveBackground 25s linear infinite;
+}
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+header{
+height: 10vmin;
+text-align: center;
+padding-top: 2vmin;
+color: white;
+text-shadow: 2px 2px black;
+}
+#container{
+height: 40vmin;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.options{
+margin: 0vmin 4vmin 0vmin 4vmin;
+height: 20vmin;
+width: 20vmin;
+border: none;
+border-radius: 50%;
+background-size: cover;
+background-position: 50% 50%;
+cursor:pointer;
+}
+.options:hover{
+border: 3px solid white;
+opacity: 0.5;
+}
+#rock{
+background-image: url(/assests/rock.png);
+}
+#paper{
+background-image: url(/assests/paper.png);
+}
+#scissor{
+background-image: url(/assests/scissors.png);
+}
+#score-count{
+text-shadow: 1px 1px rgb(185, 179, 179);
+height: 15vmin;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 5vmin;
+font-weight: bolder;
+gap: 3rem;
+}
+#display-msg{
+position: absolute;
+left: 38%;
+height: 8vmin;
+margin-top: 8vmin;
+width: 50vmin;
+font-size: 4vmin;
+font-weight: bold;
+font-family: cursive;
+background-color: green;
+text-align: center;
+border-radius: 1rem;
+padding-top: 1vmin;
+text-shadow: 1px 1px rgb(231, 212, 212);
+}
+@media (max-width : 600px) {
+  #display-msg{
+    position: absolute;
+    left : 25%;
+  }
+  body{
+    background-size: auto;
+  }
+  header{
+    margin-top: 10%;
+    margin-bottom: 35%;
+  }
+}
+#display-msg:hover{
+border: 3px solid brown;
+}
+.score{
+text-align: center;
+}
+.vsBox{
+  background-color: grey;
+  height: 18vmin;
+  width: 60vmin;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 5rem;
+  border: 2px solid white;
+  font-size: 5vmin;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hide {
+  display: none;
+}
